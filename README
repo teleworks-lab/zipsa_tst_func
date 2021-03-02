@@ -1,0 +1,6 @@
+If you use the camera app when you install this package first,
+you should copy the libray files to the directory /usr/lib.
+
+$ cd bin/
+$ sudo cp libmodengine* /usr/lib
+$ sudo ldconfig

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/work/zipsa_tst_func/cpp/teleworks/CmdExecutor.cpp
+BuildPlatform.h
+/home/ubuntu/work/zipsa_tst_func/cpp/teleworks/BuildPlatform.h
+CmdExecutor.h
+/home/ubuntu/work/zipsa_tst_func/cpp/teleworks/CmdExecutor.h
+utils.h
+/home/ubuntu/work/zipsa_tst_func/cpp/teleworks/utils.h
+sys/stat.h
+-
+thread
+-
+
+cpp/inc/BuildPlatform.h
+
+cpp/inc/CmdExecutor.h
+iostream
+-
+
+cpp/inc/utils.h
+iostream
+-
+vector
+-
+sstream
+-
+fstream
+-
+unistd.h
+-
+limits.h
+-
+
