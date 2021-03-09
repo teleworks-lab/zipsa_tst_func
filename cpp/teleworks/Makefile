@@ -67,10 +67,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/work/zipsa_tst_func
+CMAKE_SOURCE_DIR = /home/jhnam/workspace/zipsa_proj/zipsa_tst_func
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/work/zipsa_tst_func
+CMAKE_BINARY_DIR = /home/jhnam/workspace/zipsa_proj/zipsa_tst_func
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -88,8 +88,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,14 +99,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/work/zipsa_tst_func && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/work/zipsa_tst_func/CMakeFiles /home/ubuntu/work/zipsa_tst_func/cpp/teleworks//CMakeFiles/progress.marks
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/work/zipsa_tst_func/CMakeFiles 0
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(CMAKE_COMMAND) -E cmake_progress_start /home/jhnam/workspace/zipsa_proj/zipsa_tst_func/CMakeFiles /home/jhnam/workspace/zipsa_proj/zipsa_tst_func/cpp/teleworks//CMakeFiles/progress.marks
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jhnam/workspace/zipsa_proj/zipsa_tst_func/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/clean
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/preinstall
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/preinstall
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/work/zipsa_tst_func && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cpp/teleworks/CMakeFiles/mockup_server.dir/rule:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/CMakeFiles/mockup_server.dir/rule
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp/teleworks/CMakeFiles/mockup_server.dir/rule
 .PHONY : cpp/teleworks/CMakeFiles/mockup_server.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ mockup_server: cpp/teleworks/CMakeFiles/mockup_server.dir/rule
 
 # fast build rule for target.
 mockup_server/fast:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/build
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/build
 .PHONY : mockup_server/fast
 
 ClientSocket.o: ClientSocket.cpp.o
@@ -150,7 +150,7 @@ ClientSocket.o: ClientSocket.cpp.o
 
 # target to build an object file
 ClientSocket.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.o
 .PHONY : ClientSocket.cpp.o
 
 ClientSocket.i: ClientSocket.cpp.i
@@ -159,7 +159,7 @@ ClientSocket.i: ClientSocket.cpp.i
 
 # target to preprocess a source file
 ClientSocket.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.i
 .PHONY : ClientSocket.cpp.i
 
 ClientSocket.s: ClientSocket.cpp.s
@@ -168,7 +168,7 @@ ClientSocket.s: ClientSocket.cpp.s
 
 # target to generate assembly for a file
 ClientSocket.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ClientSocket.cpp.s
 .PHONY : ClientSocket.cpp.s
 
 CmdExecutor.o: CmdExecutor.cpp.o
@@ -177,7 +177,7 @@ CmdExecutor.o: CmdExecutor.cpp.o
 
 # target to build an object file
 CmdExecutor.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.o
 .PHONY : CmdExecutor.cpp.o
 
 CmdExecutor.i: CmdExecutor.cpp.i
@@ -186,7 +186,7 @@ CmdExecutor.i: CmdExecutor.cpp.i
 
 # target to preprocess a source file
 CmdExecutor.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.i
 .PHONY : CmdExecutor.cpp.i
 
 CmdExecutor.s: CmdExecutor.cpp.s
@@ -195,7 +195,7 @@ CmdExecutor.s: CmdExecutor.cpp.s
 
 # target to generate assembly for a file
 CmdExecutor.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/CmdExecutor.cpp.s
 .PHONY : CmdExecutor.cpp.s
 
 Node.o: Node.cpp.o
@@ -204,7 +204,7 @@ Node.o: Node.cpp.o
 
 # target to build an object file
 Node.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.o
 .PHONY : Node.cpp.o
 
 Node.i: Node.cpp.i
@@ -213,7 +213,7 @@ Node.i: Node.cpp.i
 
 # target to preprocess a source file
 Node.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.i
 .PHONY : Node.cpp.i
 
 Node.s: Node.cpp.s
@@ -222,7 +222,7 @@ Node.s: Node.cpp.s
 
 # target to generate assembly for a file
 Node.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
 Queue.o: Queue.cpp.o
@@ -231,7 +231,7 @@ Queue.o: Queue.cpp.o
 
 # target to build an object file
 Queue.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.o
 .PHONY : Queue.cpp.o
 
 Queue.i: Queue.cpp.i
@@ -240,7 +240,7 @@ Queue.i: Queue.cpp.i
 
 # target to preprocess a source file
 Queue.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.i
 .PHONY : Queue.cpp.i
 
 Queue.s: Queue.cpp.s
@@ -249,7 +249,7 @@ Queue.s: Queue.cpp.s
 
 # target to generate assembly for a file
 Queue.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Queue.cpp.s
 .PHONY : Queue.cpp.s
 
 ServerSocket.o: ServerSocket.cpp.o
@@ -258,7 +258,7 @@ ServerSocket.o: ServerSocket.cpp.o
 
 # target to build an object file
 ServerSocket.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.o
 .PHONY : ServerSocket.cpp.o
 
 ServerSocket.i: ServerSocket.cpp.i
@@ -267,7 +267,7 @@ ServerSocket.i: ServerSocket.cpp.i
 
 # target to preprocess a source file
 ServerSocket.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.i
 .PHONY : ServerSocket.cpp.i
 
 ServerSocket.s: ServerSocket.cpp.s
@@ -276,7 +276,7 @@ ServerSocket.s: ServerSocket.cpp.s
 
 # target to generate assembly for a file
 ServerSocket.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/ServerSocket.cpp.s
 .PHONY : ServerSocket.cpp.s
 
 Socket.o: Socket.cpp.o
@@ -285,7 +285,7 @@ Socket.o: Socket.cpp.o
 
 # target to build an object file
 Socket.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.o
 .PHONY : Socket.cpp.o
 
 Socket.i: Socket.cpp.i
@@ -294,7 +294,7 @@ Socket.i: Socket.cpp.i
 
 # target to preprocess a source file
 Socket.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.i
 .PHONY : Socket.cpp.i
 
 Socket.s: Socket.cpp.s
@@ -303,7 +303,7 @@ Socket.s: Socket.cpp.s
 
 # target to generate assembly for a file
 Socket.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/Socket.cpp.s
 .PHONY : Socket.cpp.s
 
 mockup_server_main.o: mockup_server_main.cpp.o
@@ -312,7 +312,7 @@ mockup_server_main.o: mockup_server_main.cpp.o
 
 # target to build an object file
 mockup_server_main.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.o
 .PHONY : mockup_server_main.cpp.o
 
 mockup_server_main.i: mockup_server_main.cpp.i
@@ -321,7 +321,7 @@ mockup_server_main.i: mockup_server_main.cpp.i
 
 # target to preprocess a source file
 mockup_server_main.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.i
 .PHONY : mockup_server_main.cpp.i
 
 mockup_server_main.s: mockup_server_main.cpp.s
@@ -330,7 +330,7 @@ mockup_server_main.s: mockup_server_main.cpp.s
 
 # target to generate assembly for a file
 mockup_server_main.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/mockup_server_main.cpp.s
 .PHONY : mockup_server_main.cpp.s
 
 utils.o: utils.cpp.o
@@ -339,7 +339,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.o
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -348,7 +348,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.i
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -357,7 +357,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/ubuntu/work/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.s
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(MAKE) $(MAKESILENT) -f cpp/teleworks/CMakeFiles/mockup_server.dir/build.make cpp/teleworks/CMakeFiles/mockup_server.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -404,6 +404,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/work/zipsa_tst_func && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jhnam/workspace/zipsa_proj/zipsa_tst_func && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

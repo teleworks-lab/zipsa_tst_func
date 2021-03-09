@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/tofCAPI.dir/tofCAPI.c.o -o ../../bin/tofCAPI   -L/home/jhnam/workspace/zipsa_proj/zipsa_tst_func/bin  -Wl,-rpath,/home/jhnam/workspace/zipsa_proj/zipsa_tst_func/bin -lroyaleCAPI 

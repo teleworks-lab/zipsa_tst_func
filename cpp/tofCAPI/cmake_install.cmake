@@ -1,4 +1,4 @@
-# Install script for directory: /home/jhnam/workspace/zipsa_proj/zipsa_tst_func/cpp/teleworks
+# Install script for directory: /home/jhnam/workspace/zipsa_proj/zipsa_tst_func/cpp/tofCAPI
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

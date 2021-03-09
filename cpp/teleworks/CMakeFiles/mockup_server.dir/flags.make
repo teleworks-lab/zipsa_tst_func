@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ubuntu/work/zipsa_tst_func/cpp/inc
+CXX_INCLUDES = -I/home/jhnam/workspace/zipsa_proj/zipsa_tst_func/cpp/inc
 
 CXX_FLAGS = -Wall -pthread
 

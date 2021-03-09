@@ -138,7 +138,7 @@ bool CmdExecutor::play_microphone_voice( int ch )
 #if defined (DQ1_MACHINE)
 	//ret = system("aplay -t raw -r 16000 -f S16_LE -c 1 -B 1 -D plughw:0,0 /tmp/12345.pcm");
 	if (ch > 0 && ch <= 4) {
-		voicefname = stringFormat("/tmp/a1234.%d.wav", ch);
+		voicefname = stringFormat("-t raw -r 16000 -f S16_LE -c 1 -B 1 -D plughw:0,0 /tmp/a1234.%d.wav", ch);
 	}
 	else {
 		voicefname = "/tmp/a1234.wav";
